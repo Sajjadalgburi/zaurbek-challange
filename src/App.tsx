@@ -15,7 +15,7 @@ function DashboardLayout() {
   return (
     <div className="flex h-screen w-full overflow-hidden bg-gray-100 dark:bg-neutral-900">
       <SidebarProvider>
-        <Sidebar open={open} setOpen={setOpen}>
+        <Sidebar open={open} setOpen={setOpen} animate={true}>
           <SidebarBody className="justify-between gap-10">
             <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
               <div className="mt-8 flex flex-col gap-2">
