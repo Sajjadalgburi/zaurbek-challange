@@ -179,10 +179,25 @@ export function AIInsights() {
       </div>
 
       <Tabs defaultValue="insights" className="space-y-6">
-        <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="insights">Key Insights</TabsTrigger>
-          <TabsTrigger value="recommendations">Recommendations</TabsTrigger>
-          <TabsTrigger value="summary">Monthly Summary</TabsTrigger>
+        <TabsList className="grid w-full grid-cols-3 bg-background border">
+          <TabsTrigger 
+            value="insights" 
+            className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+          >
+            Key Insights
+          </TabsTrigger>
+          <TabsTrigger 
+            value="recommendations" 
+            className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+          >
+            Recommendations
+          </TabsTrigger>
+          <TabsTrigger 
+            value="summary" 
+            className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+          >
+            Monthly Summary
+          </TabsTrigger>
         </TabsList>
 
         <TabsContent value="insights" className="space-y-6">
